@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuneVibe - Music For Everyone</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="assets/images/logos.jpeg" alt="TuneVibe Logo"> 
+            <span>VYBE</span>
+        </div>
+        <div class="tagline">
+            <p>MUSIC BEYOND BORDERS</p>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="header">
+            <h1>Music For Everyone</h1>
+            <p>Stream your favorite tracks</p>
+        </div>
+
+        <!-- Song List -->
+        <div class="song-list" id="songList">
+            <!-- Songs will be dynamically loaded here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="player">
+        <div class="progress-container">
+            <span id="currentTime">0:00</span>
+            <input id="progressBar" type="range" value="0" min="0" max="100">
+            <span id="duration">0:00</span>
+        </div>
+        
+        <div class="player-controls">
+            <img id="playerGif" src="assets/images/player.gif" alt="Now Playing">
+            <div class="song-info">
+                <p id="currentSongName">Select a song to play</p>
+            </div>
+            
+            <!-- Main Control Buttons -->
+            <div class="controls">
+                <i id="prevBtn" class="fa-solid fa-backward-step" title="Previous"></i>
+                <i id="playBtn" class="fa-solid fa-circle-play" title="Play"></i>
+                <i id="nextBtn" class="fa-solid fa-forward-step" title="Next"></i>
+                <i id="shuffleBtn" class="fa-solid fa-shuffle" title="Shuffle"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
